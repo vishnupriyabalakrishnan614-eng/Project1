@@ -1,0 +1,119 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Navigation Bar</title>
+
+    <style>
+
+             {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+              .navbar {
+            background: linear-gradient(90deg, #1e3a8a, #2563eb);
+            padding: 15px 40px;
+
+                       display: flex;
+
+                       justify-content: space-between;
+
+                       align-items: center;
+
+                        flex-wrap: wrap;
+        }
+
+               .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+              .nav-links {
+            display: flex;
+
+                      justify-content: center;
+
+                      align-items: center;
+
+                       gap: 25px;
+
+            list-style: none;
+        }
+
+              .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 10px 15px;
+
+                      transition: 0.3s;
+        }
+
+                .nav-links a:hover {
+            background-color: white;
+            color: #1e3a8a;
+            border-radius: 6px;
+        }
+
+              @media (max-width: 700px) {
+
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .nav-links {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+        <nav class="navbar">
+
+                <div class="logo">
+            Coimbatore Institute Of Technology 
+        </div>
+
+        <!-- Menu -->
+        <ul class="nav-links">
+
+            <li>
+                <a href="#">Home</a>
+            </li>
+
+            <li>
+                <a href="#">About</a>
+            </li>
+
+            <li>
+                <a href="#">Courses</a>
+            </li>
+
+            <li>
+                <a href="#">Faculty</a>
+            </li>
+
+            <li>
+                <a href="#">Contact</a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</body>
+</html>
+
