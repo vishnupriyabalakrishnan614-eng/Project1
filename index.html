@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Student Profile</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            width: 280px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #333;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .profile {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #764ba2;
+            color: white;
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        button {
+            background: #764ba2;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #4b2b80;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="profile">V</div>
+
+        <h2>Vishnupriya B</h2>
+        <p>Computer Science Student</p>
+        <p>Interested in Web Development</p>
+
+        <button onclick="showMessage()">
+            Contact Me
+        </button>
+
+        <p id="message"></p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "Thanks for visiting my profile!";
+        }
+    </script>
+
+</body>
+</html>
